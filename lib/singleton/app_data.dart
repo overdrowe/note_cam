@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'dart:io';
 import 'package:flutter/material.dart';
 
 class AppData{
@@ -11,5 +13,7 @@ class AppData{
   AppData._internal();
 
   MaterialColor ? mainColor = Colors.red;
+  List<File> photos = [];
+  final photosStream = StreamController<File>();
 
 }
