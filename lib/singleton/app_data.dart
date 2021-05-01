@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:note_cam/models/courier_photo.dart';
 
 class AppData{
 
@@ -12,8 +13,8 @@ class AppData{
 
   AppData._internal();
 
-  MaterialColor ? mainColor = Colors.red;
-  List<File> photos = [];
+  MaterialColor ? mainColor = Colors.amber;
+  List<CourierPhoto> photos = [];
   final photosStream = StreamController<File>();
 
 }

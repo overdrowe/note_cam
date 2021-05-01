@@ -31,6 +31,8 @@ class _MainPageState extends State<MainPage>  with SingleTickerProviderStateMixi
             style: GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.w700, letterSpacing: 0.4),
           )),
       bottomNavigationBar: ConvexAppBar(
+        activeColor: Colors.black,
+        color: Colors.black.withOpacity(0.4),
         controller: _tabController,
         backgroundColor: AppData().mainColor,
         style: TabStyle.react,
