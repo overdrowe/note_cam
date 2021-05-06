@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'dart:typed_data';
+import 'package:flutter/services.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 
 class SaveImage {
@@ -10,8 +12,9 @@ class SaveImage {
 
   SaveImage._internal();
 
-  void savePhoto(File recordedImage) async {
-      final result = await ImageGallerySaver.saveImage(recordedImage.readAsBytesSync());
+  void savePhoto(Uint8List pngBytes) async {
+      // final result = await ImageGallerySaver.saveImage(recordedImage.readAsBytesSync());
+      final result = await ImageGallerySaver.saveImage(pngBytes);
       print(result);
   }
 }

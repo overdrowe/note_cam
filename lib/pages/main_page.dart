@@ -7,6 +7,10 @@ import 'package:note_cam/singleton/app_data.dart';
 
 class MainPage extends StatefulWidget {
 
+  final int initTab;
+
+  const MainPage({Key? key, this.initTab = 1}) : super(key: key);
+
   @override
   _MainPageState createState() => _MainPageState();
 }
@@ -18,7 +22,7 @@ class _MainPageState extends State<MainPage>  with SingleTickerProviderStateMixi
   @override
   void initState() {
     super.initState();
-    _tabController = new TabController(initialIndex: 1, length: 2, vsync: this);
+    _tabController = new TabController(initialIndex: widget.initTab, length: 2, vsync: this);
   }
 
   @override

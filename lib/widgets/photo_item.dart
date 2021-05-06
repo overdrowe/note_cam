@@ -20,14 +20,9 @@ class PhotoItem extends StatelessWidget {
       },
       child: Hero(
         tag: photo.photo.path,
-        child: Column(
-          children: [
-            Image.file(
-              photo.photo,
-              fit: BoxFit.cover,
-            ),
-            Text(photo.locationData.latitude.toString() + '\n' + photo.locationData.longitude.toString(),)
-          ],
+        child: Image.file(
+          photo.photo,
+          fit: BoxFit.cover,
         ),
       ),
     );

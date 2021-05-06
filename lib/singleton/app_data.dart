@@ -15,6 +15,5 @@ class AppData{
 
   MaterialColor ? mainColor = Colors.amber;
   List<CourierPhoto> photos = [];
-  final photosStream = StreamController<File>();
-
+  final StreamController<File> photosStream = StreamController<File>.broadcast();
 }

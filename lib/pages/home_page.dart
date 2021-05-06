@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
                   builder: (BuildContext context, AsyncSnapshot<File> snapshot) {
                     return GridView.count(
                       physics: NeverScrollableScrollPhysics(),
-                      childAspectRatio: 0.45,
+                      childAspectRatio: 0.58,
                       crossAxisCount: 3,
                       shrinkWrap: true,
                       mainAxisSpacing: 8,
